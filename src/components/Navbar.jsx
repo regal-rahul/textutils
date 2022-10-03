@@ -10,7 +10,7 @@ export default function Navbar(props) {
       className={`navbar navbar-expand-sm navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="#">
           {props.title}
         </a>
         <button
@@ -59,10 +59,8 @@ export default function Navbar(props) {
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  aboutText: PropTypes.string.isRequired,
 };
 
 Navbar.defaultProps = {
   title: "TEXTUTILS",
-  aboutText: "About",
 };
